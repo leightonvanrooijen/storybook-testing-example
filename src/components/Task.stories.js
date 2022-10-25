@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Task } from './Task';
 
@@ -9,10 +8,11 @@ export default {
     onArchiveTask: { action: 'onArchiveTask' },
     onTogglePinTask: { action: 'onTogglePinTask' },
     onEditTitle: { action: 'onEditTitle' },
+    onDeleteTask: { action: 'onDeleteTask' },
   },
 };
 
-const Template = (args) => <Task {...args} />;
+const Template = (args) => (<ul><Task {...args} /></ul>);
 
 export const Default = Template.bind({});
 Default.args = {
